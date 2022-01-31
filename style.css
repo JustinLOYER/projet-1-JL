@@ -1,0 +1,255 @@
+/**Reset CSS**/
+* {
+    padding: 0;
+    margin: 0;
+}
+/**Header**/
+header {
+    background: url("img/background\ image.jpg") center center/cover  no-repeat ;
+    width: 100%;
+    height: 800px;  
+}
+.row-limit-size {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+#logo1 {
+    position: relative;
+    left: 105px;
+    margin: 30px 150px 0 20px;
+    align-items: left;
+}
+#slogan {
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Ruluko';
+    padding: 45px 0px;
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 60px;
+    padding: 300px 0px;
+    font-family: 'Source Sans Pro';
+    text-align: center;
+}
+/** Main **/ 
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+nav {
+    background-color: #000000;
+    height: 410px;
+    width: 150px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    width: 150px;
+    transition: all 0.2s ease;
+    padding: auto;
+    list-style-type: none;
+    float: left;
+}
+nav > ul > li > a:hover {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+h2 {
+    font-weight: lighter;
+    font-size: 60px;
+    font-family: 'Source Sans Pro';
+}
+.bloc1, .bloc2, .bloc3 {
+    margin: 50px 50px;
+    max-width: 70%;
+    margin-right: 150px;
+}
+article {
+    padding-bottom: 50px;
+}
+article, section {
+    padding-left: 50px;
+}
+.bloc2, .bloc3 {
+    margin-left: 200px;
+}
+.title2, .bloc2 {
+    flex-direction: column;
+}
+.img1 {
+    float: right;
+    margin: 100px 0px 0px 50px;
+}
+.para2 {
+    width: 500px;
+    text-align: left;
+}
+#listcard1, #listcard2 {
+    display: flex;
+    flex-direction: column;
+    font-style: italic;
+    font-size: 2rem;
+}
+.bloccard1, .bloccard2, .bloccard3, .bloccard4 {
+    flex-direction: column;
+    max-width: 100%;
+    font-size: 2rem;
+    font-style: italic;
+    margin-left: 150px;
+    margin-bottom: 50px;
+}
+/** footer **/ 
+footer {
+    background-color: #222325; 
+    display: flex;
+    flex-direction: row;
+}
+.leftbox {
+    padding: 50px 0px 0px 100px;
+}
+.midbox {
+    padding: 50px 0px 0px 500px;
+}
+.rightbox {
+    padding: 50px 0px 0px 500px;
+}
+.leftbox, .rightbox {
+    list-style-type: none;
+    text-decoration: none;
+}
+h5 {
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 10px;
+}
+footer > .leftbox > ul > li {
+    list-style-type: none;
+    text-decoration: none;
+    list-style: none;
+}
+.leftbox > ul, .rightbox > ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+/** Media Query**/ 
+@media screen and (max-width:1150px){
+    #slogan {
+        font-size: 2.4rem;   
+    }
+    #logo1{
+        position: initial;
+    }
+}
+@media screen and (max-width:1465px) { 
+    .bloc2, .bloc1, .bloc3 {
+        margin-right: 0px;
+    }
+    .bloc1 {
+        margin: 0;
+        float: left;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+}
+/** @media screen and (max-width:1265px) {
+    .bloc2 {
+        margin-left: 50px;
+    }
+    .bloc1 {
+        margin-left: 0;
+        margin-top: 100px;
+        float: left;
+    }
+    /** changer le menu 
+        mettre tous les h2 de la meme maniere 
+}  **/
+@media screen and (max-width:1265px) {
+    .img1 {
+        margin: 0;
+        padding: 0;
+    }
+    .bloc1,.bloc2,.bloc3 {
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        display: block;
+    }
+    nav {
+        background-color: #000000;
+        height: 100px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav ul{
+        display: flex;
+        
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        height: 100px;
+        line-height: 100px;
+        transition: all 0.2s ease;
+        padding: 0 20px;
+        list-style-type: none; 
+        text-align: center;
+    }
+    h2 { 
+        font-size: 2rem;
+        float: left;
+    }
+    section {
+        font-size: 1.5rem;
+    }
+    .bloc1, .bloc2, .bloc3 {
+        float: left;
+        margin: 25px 0px
+    }
+}
+@media screen and (max-width:950px){
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    main {
+        margin-right: 10px;
+    }
+    .img1 {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width:800px) {
+    .bloccard1, .bloccard2, .bloccard3, .bloccard4 {
+        flex-direction: column;
+        max-width: 100%;
+        font-size: 1rem;
+        font-style: italic;
+        margin-bottom: 50px;
+}
+}
+@media screen and (max-width:1665px) {
+    .leftbox, .midbox, .rightbox {
+        padding: 50px;
+    }
+}
+@media screen and (max-width:565px) {
+    .leftbox, .midbox, .rightbox {
+        padding: 0px;
+    }
+}
